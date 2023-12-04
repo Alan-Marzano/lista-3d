@@ -40,21 +40,23 @@ function App() {
           style={{ x, y, rotateX, rotateY, z: 10 }}
           drag
           dragElastic={0.18}
-          dragConstraints={{ top: 0, left: 0, right: 0, botton: 0 }}
+          dragConstraints={{
+            top: 0,
+            left: -10,
+            right: 10,
+            bottom: 0,
+          }}
           whileTop={{ cursor: "grabbing" }}
-
           className="container-fluid">
 
-          <motion.div
-            style={{ x, y, rotateX, rotateY, z: -1 }}
-
+          <div
             className="titulo">
             <h1>Lista 3D</h1>
-          </motion.div>
+          </div>
           <InputArea onAdd={añadirItem} />
 
           <motion.div
-            style={{ x, y, rotateX, rotateY, z: 1000 }}
+            style={{ x, y, rotateX, rotateY, z: 100 }}
 
             className="items">
             <ul>
@@ -72,19 +74,7 @@ function App() {
           <div className="cartel1">
 
             <motion.div
-              style={{ x, y, rotateX, rotateY, z: 10 }}
-            >
-              <Image className="planeta"
-                src="/imagenes/saturno.png"
-                width={250}
-                height={250}
-                priority={true}
-                draggable="false"
-                alt="imagen planeta"></Image>
-            </motion.div>
-
-            <motion.div
-              style={{ x, y, rotateX, rotateY, z: 100000 }}
+              style={{ x, y, rotateX, rotateY, z: 1000 }}
             >
               <Image className="astronauta"
                 src="/imagenes/astronauta.png"
@@ -92,12 +82,10 @@ function App() {
                 height={250}
                 priority={true}
                 draggable="false"
-                alt="imagen astronauta"></Image>
+                alt="imagen de astronauta"></Image>
             </motion.div>
 
           </div>
-
-
         </motion.div>
 
         <Footer />

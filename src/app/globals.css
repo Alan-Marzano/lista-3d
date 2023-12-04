@@ -1,12 +1,14 @@
 * {
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
 }
 
 section {
   height: auto;
-  width: auto;
-  background-image: url("/imagenes/fondo.jpeg");
+  max-height: max-content;
+  width: 100%;
+  background-image: url("/imagenes/fondo.jpg");
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -18,22 +20,24 @@ section {
   font-family: "Architects Daughter", cursive;
   text-align: center;
   font-size: 130%;
+  overflow:hidden;
 }
 
 .container-fluid {
-  height: auto;
-  min-height: 100vh;
+  height: 100%;
+  min-height:100svh;
+  max-height: fit-content;
   max-width: auto;
-  min-width: 15rem;
+  min-width: auto;
   background-color: white;
   background: transparent;
-  backdrop-filter: blur(50px);
   border-radius: 1rem;
   border: 2px solid rgba(255, 255, 255, 5);
   padding: 1rem;
   box-sizing: border-box;
-  margin: 5% 5%;
+  margin: 3% 5%;
   overflow-wrap: break-word;
+  scroll-behavior: smooth;
 }
 
 .titulo {
@@ -48,7 +52,9 @@ section {
   padding: 0.2rem 1.2rem;
   border-radius: 20% 5% 20% 5%/5% 20% 25% 20%;
   background-color: #21c763;
-  font-size: 1.5rem;
+  font-size: 1.7rem;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+
 }
 
 .formulario input {
@@ -69,7 +75,7 @@ section {
 button {
   padding: 0;
   border: none;
-  font-family: "Architects Daughter", cursive;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, 'sans-serif';
   text-decoration: none;
   padding-bottom: 3px;
   border-radius: 5px;
@@ -90,6 +96,7 @@ li {
   position: relative;
   padding: 0.5rem;
   margin-left: 2rem;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 
 .FOO {
@@ -100,13 +107,13 @@ li {
 
 .footer {
   background-color: rgb(33, 32, 32);
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
   color: #fff;
   padding: 1%;
   margin: 0;
   text-align: center;
-  font-size: 1rem;
+  font-size: 1.2rem;
 }
-
 
 p {
   perspective: 2000;
@@ -114,19 +121,9 @@ p {
 
 .cartel1 {
   position: relative;
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  grid-template-rows: 1fr ;
-}
-
-.cartel1 .planeta {
-  grid-column: 1;
-  width: auto;
-  height: auto;
 }
 
 .cartel1 .astronauta {
-  grid-column: 2;
   width: auto;
   height: auto;
 }
@@ -135,74 +132,26 @@ p {
 @media (min-width: 279px) {
 
   .container-fluid {
-    margin: 3%;
-  }
-
-  .cartel1 .planeta {
-    grid-column: 1;
-    width: 100px;
-    height: 100px;
+    margin: 5% 7%;
   }
 
   .cartel1 .astronauta {
-    width: 150px;
-    height: 150px;
+    width: auto;
+    height: auto;
     padding-top: 3rem;
   }
 
 }
 
-@media (min-width: 400px) {
-
-  .container-fluid {
-    margin: 5%;
-  }
-
-  .cartel1 .planeta {
-    grid-column: 1;
-    width: 150px;
-    height: 150px;
-  }
-
-  .cartel1 .astronauta {
-    width: 200px;
-    height: 200px;
-  }
-
-}
-
-
-@media (min-width: 500px) {
-
-  .container-fluid {
-    margin: 5%;
-  }
-
-  .cartel1 .planeta {
-    width: 150px;
-    height: 150px;
-  }
-
-  .cartel1 .astronauta {
-    width: 150px;
-    height: 150px;
-  }
-}
-
 @media (min-width: 700px) {
 
   .container-fluid {
-    margin: 5% 20%;
-  }
-
-  .cartel1 .planeta {
-    width: 200px;
-    height: 200px;
+    margin: 3% 20%;
   }
 
   .cartel1 .astronauta {
-    width: 250px;
-    height: 250px;
+    width: auto;
+    height: auto;
   }
 }
 
