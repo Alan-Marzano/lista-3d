@@ -29,7 +29,6 @@ section {
   max-height: fit-content;
   max-width: auto;
   min-width: auto;
-  background-color: white;
   background: transparent;
   border-radius: 1rem;
   border: 2px solid rgba(255, 255, 255, 5);
@@ -65,25 +64,36 @@ section {
   border-bottom-left-radius: 3px 15px;
   border: solid 3px transparent;
   border-bottom: dashed 3px #90b9a1;
-  font-family: "Architects Daughter", cursive;
-  font-size: 1rem;
-  color: white;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
   width: 70%;
   margin-bottom: 20px;
+  font-size: 1.2rem;
+  color: rgb(227, 201, 201);
+}
+
+.formulario span{
+  color: rgb(255, 255, 255);
+  font-size: large;
+}
+
+.formulario span:hover{
+  
+  cursor: pointer;
+  color: #4c7aac;
 }
 
 button {
   padding: 0;
   border: none;
-  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, 'sans-serif';
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
   text-decoration: none;
   padding-bottom: 3px;
   border-radius: 5px;
-  background-color: #1e8a9d;
+  background-color: #1e5b9d;
 }
 
 button span {
-  background: #89e9b0;
+  background: #79d49e;
   display: block;
   padding: 0.5rem 1rem;
   border-radius: 5px;
@@ -97,6 +107,11 @@ li {
   padding: 0.5rem;
   margin-left: 2rem;
   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  cursor: pointer;
+}
+
+li:hover {
+  color: white;
 }
 
 .FOO {

@@ -13,7 +13,7 @@ function InputArea(props) {
   return (
 
     <div className="formulario">
-      <input onChange={handleChange} type="text" value={inputText} />
+      <input className="texto" onChange={handleChange} type="text" value={inputText} />
       <button
         onClick={() => {
           props.onAdd(inputText);
